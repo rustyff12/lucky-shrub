@@ -1,0 +1,15 @@
+/* Main styles */
+/*
+breakpoints:
+576px
+768px
+992px
+1200px
+*/
+:root {
+    --clr-black: #262626;
+    --clr-red: #b53434;
+    --clr-blue: #26877f;
+    --clr-yellow: #ec9a29;
+    --clr-white: #ede7f1;
+}
