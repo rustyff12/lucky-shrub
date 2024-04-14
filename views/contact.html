@@ -18,22 +18,82 @@
         />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Lucky Shrub" />
-        <!-- End Open Graph Protocol meta tags -->
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS -->
         <link rel="stylesheet" href="../assets/css/normalize.css" />
-        <link rel="stylesheet" href="../assets/css/index.css" />
+        <link rel="stylesheet" href="../assets/css/contact.css" />
     </head>
     <body>
         <header>
             <img src="../assets/logos/logo-2.png" alt="Lucky Shrub Logo" />
+            <nav class="navbar-mobile">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar-large-screen">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="info.html">Info</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="products.html">Info</a></li>
-            </ul>
-        </nav>
+
+        <main>
+            <article>
+                <div class="contact-head">
+                    <h3>Come and find us</h3>
+                    <p>
+                        Located right next to
+                        <a
+                            href="https://www.missiongarden.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Mission Gardens</a
+                        >
+                        Historical Museum, west of downtown Tuscon
+                    </p>
+                </div>
+                <div class="contact-body">
+                    <div class="contact-address">
+                        <address>
+                            <p>Lucky Shrub</p>
+                            <p>944 W Mission Ln</p>
+                            <p>Tucson, AZ 85745</p>
+                            <p>USA</p>
+                        </address>
+                        <p>Contact us by phone:</p>
+                        <p><a href="tel:+1234567890">+1 (123) 456-7890</a></p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.617532433661!2d-110.98986092527208!3d32.214535112520394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d670d0af7c1015%3A0xd48fa76ffb435851!2s944%20W%20Mission%20Ln%2C%20Tucson%2C%20AZ%2085745%2C%20USA!5e0!3m2!1sen!2sde!4v1713107566957!5m2!1sen!2sde"
+                            width="300"
+                            height="225"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+            </article>
+        </main>
+
         <footer>
             <div>
                 <img
@@ -49,5 +109,6 @@
                 </p>
             </div>
         </footer>
+        <script src="../assets/js/script.js"></script>
     </body>
 </html>
