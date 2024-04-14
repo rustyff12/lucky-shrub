@@ -21,6 +21,7 @@ a {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
+    background: var(--clr-white);
 }
 
 /* Header */
@@ -97,6 +98,75 @@ header img {
 }
 /* Main */
 
+.product-hero,
+.services-hero {
+    background: var(--clr-blue);
+    width: 100svw;
+    padding: 10rem 1rem;
+    text-align: center;
+}
+.product-hero,
+.services-hero h1 {
+    font-size: 2rem;
+    color: var(--clr-white);
+    font-weight: 700;
+}
+
+.product-hero,
+.services-hero p {
+    color: var(--clr-white);
+    font-weight: 700;
+}
+/* Products */
+.products,
+.services {
+    display: flex;
+    flex-direction: column;
+    background: var(--clr-white);
+    /* border: 1px solid #b53434; */
+}
+
+.products h3,
+.services h3 {
+    padding: 10rem 1rem;
+    font-size: 2rem;
+    background-color: var(--clr-white);
+    color: var(--clr-blue);
+    text-align: center;
+}
+
+.products p,
+.services p {
+    padding: 5rem 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background: white;
+}
+
+.products img,
+.services img {
+    width: 100svw;
+}
+
+.services-hero a,
+.services-hero a:visited {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+.services-hero a:hover {
+    color: var(--clr-red);
+}
+.services a,
+.services a:visited {
+    text-decoration: none;
+    color: var(--clr-blue);
+}
+.services a:hover {
+    color: var(--clr-red);
+}
+.services a {
+    font-weight: 700;
+}
 /* Footer */
 
 footer {
@@ -104,6 +174,7 @@ footer {
     flex-direction: column;
     border-top: 4px solid var(--clr-blue);
     text-align: center;
+    background: white;
 }
 
 footer img {
@@ -129,6 +200,45 @@ footer a:visited {
 footer a:hover {
     color: var(--clr-blue);
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .product-hero,
+    .services-hero {
+        padding: 15rem 1rem;
+    }
+    /* Products */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .products article {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        /* border: 1px solid #b53434; */
+    }
+
+    .products h3 {
+        padding: 1rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .products img {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .products article p {
+        height: 30vh;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -183,6 +293,70 @@ footer a:hover {
 
     /* Body */
 
+    .product-hero,
+    .services-hero h1 {
+        font-size: 3rem;
+    }
+
+    .product-hero,
+    .services-hero p {
+        font-size: 1.5rem;
+    }
+    /* Products */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .products article {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .products img {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .products article p {
+        height: 15vh;
+        font-size: 1.125rem;
+    }
+    /* Services */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 0 4rem;
+    }
+    .services article {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 600px;
+    }
+    .services h3 {
+        padding: 1rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services img {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .services article .services-info {
+        height: 15vh;
+        font-size: 1.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     /* Footer */
     footer {
         flex-direction: row;
@@ -203,5 +377,12 @@ footer a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products {
+        max-width: 1300px;
+        margin: 0 auto;
     }
 }

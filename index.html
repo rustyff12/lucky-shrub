@@ -33,7 +33,9 @@
             <nav class="navbar-mobile">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="views/products.html">Products</a></li>
+                    <li>
+                        <a href="views/products.html">Products / Services</a>
+                    </li>
                     <li><a href="views/contact.html">Contact</a></li>
                     <li><a href="views/info.html">Info</a></li>
                 </ul>
@@ -41,7 +43,9 @@
             <nav class="navbar-large-screen">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="views/products.html">Products</a></li>
+                    <li>
+                        <a href="views/products.html">Products / Services</a>
+                    </li>
                     <li><a href="views/contact.html">Contact</a></li>
                     <li><a href="views/info.html">Info</a></li>
                 </ul>
@@ -56,8 +60,8 @@
                 <div class="hero-content">
                     <h1>Lucky Shrub</h1>
                     <p>
-                        Feel like some gardening? <span>Luckily</span> we are
-                        here to meet your needs
+                        Feel like some gardening? Luckily we are here to meet
+                        your needs
                     </p>
                 </div>
             </article>
@@ -82,13 +86,17 @@
             <section class="main-content">
                 <article>
                     <h3>Individual Plants</h3>
+
                     <img
                         src="assets/images/image-3.jpg"
                         alt="A collection of pot plants"
+                        onclick="productsRedirect()"
                     />
                     <p>
-                        We offer individual plants for people who prefer to get
-                        their hands dirty
+                        <a href="views/products.html#products"
+                            >We offer individual plants for people who prefer to
+                            get their hands dirty</a
+                        >
                     </p>
                 </article>
                 <article>
@@ -96,10 +104,13 @@
                     <img
                         src="assets/images/image-6.jpg"
                         alt="Designer Garden"
+                        onclick="contactRedirect()"
                     />
                     <p>
-                        Full scale projects available for you with a
-                        consultation
+                        <a href="views/contact.html">
+                            Full scale projects available for you with a
+                            consultation
+                        </a>
                     </p>
                 </article>
                 <article>
@@ -107,10 +118,13 @@
                     <img
                         src="assets/images/image-4.jpg"
                         alt="Someone planting plants"
+                        onclick="productsRedirect()"
                     />
                     <p>
-                        If you prefer to do it yourself we also cater for small
-                        to medium size DIY projects
+                        <a href="views/products.html#products">
+                            If you prefer to do it yourself we also cater for
+                            small to medium size DIY projects
+                        </a>
                     </p>
                 </article>
             </section>

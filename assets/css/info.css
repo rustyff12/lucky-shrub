@@ -111,6 +111,7 @@ header img {
 .info-head p {
     font-size: 1.5rem;
     color: var(--clr-white);
+    font-weight: 700;
 }
 
 .info-main {
@@ -172,6 +173,9 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+    .info-head {
+        padding: 15rem 1rem;
+    }
     .info-main article {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -271,6 +275,14 @@ footer a:hover {
     }
 
     /* Body */
+    .info-head h1 {
+        font-size: 3rem;
+    }
+
+    .info-head p {
+        font-size: 1.5rem;
+    }
+
     .info-text {
         font-size: 1.125rem;
     }
@@ -298,6 +310,9 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1200px) {
+    .info-main h3 {
+        font-size: 2rem;
+    }
     .info-text {
         font-size: 1.5rem;
     }

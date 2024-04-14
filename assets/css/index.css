@@ -18,6 +18,11 @@
 a {
     cursor: pointer;
 }
+
+.main-content img:hover {
+    cursor: pointer;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
@@ -183,7 +188,14 @@ header img {
     font-size: 1.5rem;
     text-align: center;
 }
-
+.main-content article a,
+.main-content article a:visited {
+    text-decoration: none;
+    color: var(--clr-black);
+}
+.main-content article a:hover {
+    color: var(--clr-red);
+}
 /* Footer */
 
 footer {
@@ -330,7 +342,13 @@ footer a:hover {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         align-self: center;
+    }
+    .main-content article a,
+    .main-content article a:visited {
         color: var(--clr-white);
+    }
+    .main-content article a:hover {
+        color: var(--clr-black);
     }
 
     /* Footer */

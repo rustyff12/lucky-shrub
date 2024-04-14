@@ -1,3 +1,4 @@
+// Mobile nav
 const hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", () => {
     const navBar = document.querySelector(".navbar-mobile");
@@ -16,3 +17,11 @@ hamburger.addEventListener("click", () => {
 });
 
 // <!-- <i class="fa-solid fa-x"></i> -->
+// Redirects
+const productsRedirect = () => {
+    window.location.href = "views/products.html#products";
+};
+
+const contactRedirect = () => {
+    window.location.href = "views/contact.html";
+};
