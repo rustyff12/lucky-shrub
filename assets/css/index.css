@@ -148,6 +148,14 @@ header img {
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); */
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    background: var(--clr-white);
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -210,6 +218,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+    .info {
+        font-size: 1.125rem;
+    }
+}
+
 @media screen and (min-width: 992px) {
     /* Header */
     .hamburger {
@@ -270,6 +284,11 @@ footer a:hover {
         font-weight: 700;
     }
 
+    .info {
+        flex-direction: row;
+        padding: 8rem 2rem 2rem 2rem;
+    }
+
     .main-content {
         display: flex;
         flex-direction: row;
@@ -311,6 +330,7 @@ footer a:hover {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         align-self: center;
+        color: var(--clr-white);
     }
 
     /* Footer */

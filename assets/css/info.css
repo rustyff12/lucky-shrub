@@ -96,6 +96,46 @@ header img {
     color: var(--clr-blue);
 }
 /* Main */
+.info-head {
+    background: var(--clr-blue);
+    width: 100svw;
+    padding: 10rem 1rem;
+    text-align: center;
+}
+
+.info-head h1 {
+    font-size: 2rem;
+    color: var(--clr-white);
+    font-weight: 700;
+}
+.info-head p {
+    font-size: 1.5rem;
+    color: var(--clr-white);
+}
+
+.info-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-main h3 {
+    padding: 10rem 1rem;
+    font-size: 2rem;
+    background-color: var(--clr-white);
+    color: var(--clr-blue);
+    text-align: center;
+}
+.info-main img {
+    width: 100svw;
+}
+
+.info-text p {
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+/* .info-main p:not(:last-child) {
+    padding-bottom: 2rem;
+} */
 
 /* Footer */
 
@@ -129,6 +169,55 @@ footer a:visited {
 footer a:hover {
     color: var(--clr-blue);
     text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .info-main article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .info-main h3 {
+        padding: 1rem;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-text {
+        padding: 0;
+        font-size: 0.95rem;
+    }
+
+    .info-main img {
+        width: 100%;
+    }
+
+    .info-main h3 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .info-text {
+        grid-area: 1 / 1 / 6 / 2;
+    }
+
+    .info-main img {
+        grid-area: 2 / 2 / 6 / 3;
+    }
+
+    .reverse-layout h3 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .reverse-layout .info-text {
+        grid-area: 1 / 2 / 6 / 3;
+    }
+
+    .reverse-layout img {
+        grid-area: 2 / 1 / 6 / 2;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -182,7 +271,9 @@ footer a:hover {
     }
 
     /* Body */
-
+    .info-text {
+        font-size: 1.125rem;
+    }
     /* Footer */
     footer {
         flex-direction: row;
@@ -203,5 +294,11 @@ footer a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .info-text {
+        font-size: 1.5rem;
     }
 }
