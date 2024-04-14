@@ -4,6 +4,100 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lucky Shrub</title>
+        <!-- Open Graph Protocol meta tags -->
+        <meta property="og:title" content="Lucky Shrub" />
+        <meta property="og:type" content="website" />
+        <!-- <meta property="og:url" content="https://www.example.com/" /> -->
+        <meta property="og:image" content="assets/images/main-image-sm.jpg" />
+        <meta
+            property="og:description"
+            content="We specialize in garden design and creation, just for you"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Lucky Shrub" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/normalize.css" />
+        <link rel="stylesheet" href="assets/css/index.css" />
     </head>
-    <body></body>
+    <body>
+        <header>
+            <img src="assets/logos/logo-2.png" alt="Lucky Shrub Logo" />
+            <nav class="navbar-mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="views/products.html">Products</a></li>
+                    <li><a href="views/contact.html">Contact</a></li>
+                    <li><a href="views/info.html">Info</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </header>
+
+        <main>
+            <article class="hero">
+                <h1>Lucky Shrub</h1>
+                <p>
+                    Feel like some gardening? <span>Luckily</span> we are here
+                    to meet your needs
+                </p>
+            </article>
+            <section class="main-content">
+                <article>
+                    <h3>Individual Plants</h3>
+                    <img
+                        src="assets/images/image-3.jpg"
+                        alt="A collection of pot plants"
+                    />
+                    <p>
+                        We offer individual plants for people who prefer to get
+                        their hands dirty
+                    </p>
+                </article>
+                <article>
+                    <h3>Full Scale Projects</h3>
+                    <img
+                        src="assets/images/image-6.jpg"
+                        alt="Designer Garden"
+                    />
+                    <p>
+                        Full scale projects available for you with a
+                        consultation
+                    </p>
+                </article>
+                <article>
+                    <h3>Small Scale Projects</h3>
+                    <img
+                        src="assets/images/image-4.jpg"
+                        alt="Someone planting plants"
+                    />
+                    <p>
+                        If you prefer to do it yourself we also cater for small
+                        to medium size DIY projects
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <img src="assets/logos/footer-2.svg" alt="Lucky Shrub Logo" />
+            </div>
+            <div>
+                <p>
+                    &copy; 2024<a href="https://github.com/rustyff12"
+                        >Russell Frankpitt</a
+                    >
+                </p>
+            </div>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
